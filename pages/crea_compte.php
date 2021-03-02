@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
 <?php
 session_start();
 require_once('../templates/header.php');
@@ -17,9 +19,12 @@ require_once('../templates/header.php');
 
         <input type="password" name="cpassword" placeholder="Confirmer Mot de passe" required>
 
-        <button style="color:white; background-color:#007bff;border-color: #007bff;" type="submit" name="formsend" id="login-button" >Créer</button>
+        <button style="color:white; background-color:#007bff;border-color: #007bff;" type="submit" name="formsend"
+            id="login-button">Créer</button>
     </form>
     <a href="connection.php" class="login">Retour à l'écran de connexion</a>
 </div>
 
 <?php include("../templates/footer.php") ?>
+
+</html>

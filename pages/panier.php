@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
 <?php
 include("../templates/header_panier.php");
 require_once('../modeles/Produits.php');
@@ -130,3 +132,5 @@ require_once('../modeles/Type.php');
 
 
 <?php include("../templates/footer.php"); ?>
+
+</html>
