@@ -12,17 +12,19 @@ $Liste_type = $Type->getType();
     <meta charset="utf-8">
     <Title>TopAuto</Title>
     <link rel="icon" href="../images/logo.jpg" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <style type="text/css">
-        .auto-style1 {
-            width: 178px;
-        }
+    .auto-style1 {
+        width: 178px;
+    }
 
-        .auto-style2 {
-            width: 168px;
-        }
+    .auto-style2 {
+        width: 168px;
+    }
     </style>
 </head>
 
@@ -39,8 +41,9 @@ $Liste_type = $Type->getType();
 
             <?php foreach ($Liste_type as $type) { ?>
 
-                <a class="btn-2" style="text-align:center" data-slide-to="<?= $type['id'] - 1; ?>" data-target="#CarouselCatControls" href="accueil.php?=<?= $type['id'] ?>"> <?= $type['nom']; ?> </a>
-                <hr>
+            <a class="btn-2" style="text-align:center" data-slide-to="<?= $type['id'] - 1; ?>"
+                data-target="#CarouselCatControls" href="accueil.php?=<?= $type['id'] ?>"> <?= $type['nom']; ?> </a>
+            <hr>
             <?php } ?>
         </div>
 
@@ -56,18 +59,18 @@ $Liste_type = $Type->getType();
                     if (isset($_SESSION["id"])) {
                     ?>
 
-                        <a onclick="openNavProfil()">
-                            <i class="fas fa-user-circle"></i> Profil
-                        </a>
+                    <a onclick="openNavProfil()">
+                        <i class="fas fa-user-circle"></i> Profil
+                    </a>
 
 
 
                     <?php
                     } else {
                     ?>
-                        <a href="./connection.php">
-                            <i class="fas fa-user-circle"></i> Connexion
-                        </a>
+                    <a href="./connection.php">
+                        <i class="fas fa-user-circle"></i> Connexion
+                    </a>
 
                     <?php
                     }
@@ -81,11 +84,11 @@ $Liste_type = $Type->getType();
 </body>
 
 <script>
-    function openNavProfil() {
-        document.getElementById("sideNavigation").style.width = "280px";
-    }
+function openNavProfil() {
+    document.getElementById("sideNavigation").style.width = "280px";
+}
 
-    function closeNavProfil() {
-        document.getElementById("sideNavigation").style.width = "0";
-    }
+function closeNavProfil() {
+    document.getElementById("sideNavigation").style.width = "0";
+}
 </script>
