@@ -35,5 +35,5 @@ abstract class Modele
         return $resultat;
     }
 
-    
+
 }
