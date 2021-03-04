@@ -27,11 +27,13 @@ class Utilisateurs extends Modele
             }else{
                 // mot de passe incorrect
                 echo "mot de passe incorrect";
+                header("location: ../pages/connection.php");
             }
 
         }else{
             // email n'existe pas
             echo "email n'existe pas";
+            
         }
     }
 
