@@ -14,11 +14,15 @@ if (!isset($_SESSION['id'])) {
    $date = date("Y-m-d H:i:s");
    $num_commande = mt_rand() . "\n";
    
+  
+   
    $Commande -> addCommande($user_id,$num_commande,$date,$montant);
    $liste_commande = $Commande -> getCommande($_SESSION['id']);
    
     foreach($_SESSION['panier'] as $id_produit => $produit_commander){
-        $Commande->addProduitCommande($liste_commande[0]['id'], $id_produit);
+        $quantite = $_SESSION['panier'][$id_produit]['quantite'];
+       
+        $Commande->addProduitCommande($liste_commande[0]['id'], $id_produit, $quantite);
     }
 
    header("location:../pages/merci.php"); 

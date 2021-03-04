@@ -28,9 +28,13 @@ abstract class Modele
             // EFFECTUER UNE REQUETE SANS PARAMETRES
             $resultat = self::getBdd()->query($sql);
         } else {
-            // EFFECTUER UNE REQUETE AVEC DES PARAMETRES
-            $resultat = self::getBdd()->prepare($sql);
-            $resultat->execute($params);
+            try{
+                // EFFECTUER UNE REQUETE AVEC DES PARAMETRES
+                $resultat = self::getBdd()->prepare($sql);
+                $resultat->execute($params);
+            }catch(PDOException $e){
+                print_r($e->getMessage());exit;
+            }
         }
         return $resultat;
     }

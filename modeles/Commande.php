@@ -9,10 +9,10 @@ class Commande extends Modele
         $this->executerRequete($req, [$id_user, $num_commande, $date, $montant]);
     }
 
-    public function addProduitCommande($id_commande,$id_produit)
+    public function addProduitCommande($id_commande, $id_produit, $quantite)
     {
-        $req = "INSERT INTO commander(id_commande,id_produit) VALUES( ?, ?)";
-        $this->executerRequete($req, [$id_commande, $id_produit]);
+        $req = "INSERT INTO commander(id_commande,id_produit, quantite, prix) VALUES( ?, ?, ?, (SELECT prix FROM produits WHERE id = ? ) * ?)";
+        $this->executerRequete($req, [$id_commande, $id_produit, $quantite, $id_produit, $quantite]);
     }
 
     public function getCommande($id_user)
