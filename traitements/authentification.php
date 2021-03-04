@@ -19,4 +19,5 @@ if (
 } else {
     // Gérer erreur un champ manquant
         echo "Veuillez remplir les champs vides";
+        header("location: ../pages/connection.php");
 }
