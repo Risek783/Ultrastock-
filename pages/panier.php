@@ -86,11 +86,12 @@ require_once('../modeles/Type.php');
                         </div>
                     </li>
                 </ul>
+            </div>
 
                 <?php
                         }
                     } else { ?>
-                <div class="card-body">
+                <div class="card-body" style="text-align:center;">
                     Panier Vide
                 </div>
                 <?php
@@ -105,32 +106,42 @@ require_once('../modeles/Type.php');
             }
             ?>
 
-            </div>
             <div class="card-header text-right"
                 style="border-top: 1px solid black; background:rgba(88, 164, 214, 0.568); align-items:center">
-                <a href="./accueil.php" class="btn btn-secondary" style="float:left">Retour à la boutique</a>
-                <a href="../traitements/viderpanier.php" class="btn btn-secondary" style="float:left">Vider le
-                    panier</a>
+                
+                
+                
+                <?php 
+                    if (!empty($_SESSION["panier"])) {
+                ?>
+                <a href="./accueil.php" class="btn btn-primary" style="float:left; margin-right:5px;">
+                    Retour à la boutique
+                </a>
+
+                <a href="../traitements/viderpanier.php" class="btn btn-secondary" style="float:left">
+                    Vider le panier
+                </a>
 
                 <a href="" class="btn btn-secondary">
                     <b><?= $prix_panier ?> €</b>
                 </a>
-                <a href="#" class="btn btn-success">Valider la commande</a>
+
+                <a href="../traitements/validercommande.php?prix=<?= $prix_panier?>" class="btn btn-success">
+                    Valider la commande
+                </a>
+
+                <?php 
+                    }else{?>
+                        <a href="./accueil.php" class="btn btn-primary" style="float:right">
+                            Retour à la boutique
+                        </a> 
+                <?php
+                    }
+                ?>
             </div>
-
-
         </div>
-    </div>
-
-
-    </div>
     </div>
 </section>
 
-
-
-
-
 <?php include("../templates/footer.php"); ?>
-
 </html>

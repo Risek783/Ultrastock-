@@ -108,7 +108,7 @@ $Liste_type = $Type->getType();
                                         <form method="post" action="../traitements/insererDansPanier.php">
                                             <button id="btn_panier" name="produit" value="<?= $produit['id'] ?>"
                                                 type="submit" class="bouton-panier">
-                                                <span style="text-align: center;">Mettre dans le panier <i
+                                                <span style="text-align: center;">Ajouter au panier <i
                                                         class="fas fa-cart-arrow-down"></i> </span>
                                             </button>
                                         </form>

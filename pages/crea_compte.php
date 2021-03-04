@@ -23,6 +23,8 @@ require_once('../templates/header.php');
             id="login-button">Créer</button>
     </form>
     <a href="connection.php" class="login">Retour à l'écran de connexion</a>
+    <br>
+    <a href="accueil.php" class="login">Retour a l'acceuil</a>
 </div>
 
 <?php include("../templates/footer.php") ?>

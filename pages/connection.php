@@ -41,6 +41,8 @@ if (isset($_GET['email'])) {
                 name="login_user">Se Connecter</button>
         </form>
         <a href="crea_compte.php" class="login">Je suis nouveau, creer un compte</a>
+        <br>
+        <a href="accueil.php" class="login">Retour a l'acceuil</a>
     </div>
 </div>
 
