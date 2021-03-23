@@ -83,6 +83,9 @@ $Liste_type = $Type->getType();
 
                     <a href="./panier.php">
                         <i class="fas fa-shopping-cart"></i> Panier
+
+                        <a href="../pages/commande.php">
+                        <i class="fas fa-user-circle"></i> Commandes
                     </a>
                 </div>
 

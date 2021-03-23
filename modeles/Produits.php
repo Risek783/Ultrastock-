@@ -48,4 +48,9 @@ class Produits extends Modele
 
         return $this->executerRequete($req)->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    public function recupererProduitbyId($id_produit){
+        $req = "SELECT * FROM produits WHERE id = $id_produit";
+        return $this->executerRequete($req)->fetchall(PDO::FETCH_ASSOC);
+    }
 }

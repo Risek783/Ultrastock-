@@ -210,6 +210,7 @@
   text-align: center;
   font-size: 18px;
   border-radius: 8px;
+  text-decoration: none;
 }
 
 .collapsible:hover {
@@ -239,7 +240,7 @@
   color: white;
   cursor: pointer;
   padding: 8px;
-  height: 40px;
+  height: 5vh;
   width: 100%;
   border: none;
   text-align: center;
@@ -263,6 +264,20 @@
   text-align: center;
   font-size: 18px;
   border-radius: 8px;
+  
+}
+
+.pti_collapsible2 {
+  background: rgba(179, 56, 56, 0.568);
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  height: 40px;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 8px;
+  margin-bottom: 5px;
 }
 
 .sidenav {
@@ -421,4 +436,21 @@
   margin-bottom: 3vh;
   font-size: 23px;
   font-weight: 400;
+}
+
+.article_produit2{
+  background:rgba(252,252,252,0.4);
+  margin:2vw 0px 2vw 3.5vw  ;
+  height:88vh; 
+  border-radius:7px; 
+  border:1px black solid;
+}
+
+.article_produit3 {
+  background:rgba(252,252,252,0.4); 
+  margin-left:2vw; 
+  margin-top:2vw; 
+  height:88vh; 
+  border-radius:7px; 
+  border:1px black solid;
 }

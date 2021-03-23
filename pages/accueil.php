@@ -54,11 +54,11 @@ $Liste_type = $Type->getType();
                         <article id="<?= $produit['id'] ?>" class="card"
                             style="margin-bottom: 10px;border-radius:15px; border: 1px solid black;background-color: rgba(250, 250, 250, 0.6); box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);">
                             <div class=" row no-gutters" style="border: 1px solid black;border-radius:15px">
-                                <div id="image" class="col-sm-5" hidden>
+                                <div id="image" class="col-lg-5" hidden>
                                     <img class="card-img" style="max-height: 270px; object-fit:cover;border-radius:15px"
                                         src=" <?= $produit['image'] ?>">
                                 </div>
-                                <div id="image" class="col-sm-5">
+                                <div id="image" class="col-lg-5">
                                     <img class="card-img" style="max-height: 270px; object-fit:cover;border-radius:15px"
                                         src=" <?= $produit['image'] ?>">
                                 </div>
@@ -101,8 +101,8 @@ $Liste_type = $Type->getType();
                                         <br>
                                         <a href=" description_jeu.php?jeu=<?= $produit['id'] ?>">
                                             <button type="button" class="collapsible">
-                                                <span style="text-align: center;">Voir le produit <i
-                                                        class="fas fa-info-circle"></i> </span>
+                                                <a style="text-decoration:none" href="produit.php?id=<?=$produit['id']?>" ><span style="text-align: center;">Voir le produit <i
+                                                        class="fas fa-info-circle"></i> </span></a>
                                             </button>
                                         </a>
                                         <form method="post" action="../traitements/insererDansPanier.php">
