@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  lun. 29 mars 2021 à 09:29
+-- Généré le :  lun. 29 mars 2021 à 17:35
 -- Version du serveur :  10.4.10-MariaDB
 -- Version de PHP :  7.3.12
 
@@ -279,8 +279,8 @@ CREATE TABLE IF NOT EXISTS `utilisateurs` (
 --
 
 INSERT INTO `utilisateurs` (`id`, `nom`, `prenom`, `email`, `password`, `id_role`) VALUES
-(14, 'no', 'no@no.no', 'no', '$2y$10$ka6JoY84pBf6mmW1A4SbN.8kY/P2OCQIorTMes8x.uwxbguXDrlLO', 3),
-(13, 'yes', 'yes@yes.com', 'yes', '$2y$10$ToonLSt.l9ic78kcKPtp8e0MThgHXnHphDmiJMtgio3KeBM3gOidi', 1),
+(14, 'no', 'no', 'no@no.no', '$2y$10$ka6JoY84pBf6mmW1A4SbN.8kY/P2OCQIorTMes8x.uwxbguXDrlLO', 3),
+(13, 'yes', 'yes', 'yes@yes.yes', '$2y$10$ToonLSt.l9ic78kcKPtp8e0MThgHXnHphDmiJMtgio3KeBM3gOidi', 1),
 (11, 'Fernandez', 'lucas@gmail.com', 'Lucas', '$2y$10$kyYG4N0vj7iGvBCpkgVcye3aH8xtc4tWwIK.Tu0FuDfj0VJ3T/Zne', 1),
 (12, 'wiz', 'wizkalifa@gmail.com', 'kal', '$2y$10$FwSfx5bfpDja373KA0jTNuhxJ16UXl1gn3zyrlCNJGzW0KBX1K1l.', 1),
 (15, 'uo', 'uo', 'uo@uo.uo', '$2y$10$5bk/ipQ4QSh.x2m/GeIkauFH9uv95HGglyDDTz5MfRMBRL8mkrJgW', 1),
