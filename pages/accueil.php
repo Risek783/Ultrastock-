@@ -55,14 +55,14 @@ $Liste_type = $Type->getType();
                             style="margin-bottom: 10px;border-radius:15px; border: 1px solid black;background-color: rgba(250, 250, 250, 0.6); box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);">
                             <div class=" row no-gutters" style="border: 1px solid black;border-radius:15px">
                                 <div id="image" class="col-lg-5" hidden>
-                                    <img class="card-img" style="max-height: 270px; object-fit:cover;border-radius:15px"
+                                    <img class="card-img" style="height: 29.5px; object-fit:cover;border-radius:15px"
                                         src=" <?= $produit['image'] ?>">
                                 </div>
                                 <div id="image" class="col-lg-5">
-                                    <img class="card-img" style="max-height: 270px; object-fit:cover;border-radius:15px"
+                                    <img class="card-img" style="height: 29.5vh; object-fit:cover;border-radius:15px"
                                         src=" <?= $produit['image'] ?>">
                                 </div>
-                                <div class="col-sm-7">
+                                <div class="col-lg-7">
                                     <div class="card-body">
                                         <div id="infos" hidden>
 
@@ -88,10 +88,9 @@ $Liste_type = $Type->getType();
                                         </div>
                                         <br>
                                         <hr>
-                                        <br>
                                         <div style="text-align: center">
                                             <?php foreach ($categorie_list as $cat) { ?>
-                                            <button type=button class="pti_collapsible">
+                                            <button type=button class="pti_collapsible col-md-4">
                                                 <span style="text-align: center;"><?= $cat['nom'] ?> </span>
                                             </button>
                                             <?php
@@ -101,7 +100,7 @@ $Liste_type = $Type->getType();
                                         <br>
                                         <a href=" description_jeu.php?jeu=<?= $produit['id'] ?>">
                                             <button type="button" class="collapsible">
-                                                <a style="text-decoration:none" href="produit.php?id=<?=$produit['id']?>" ><span style="text-align: center;">Voir le produit <i
+                                                <a style="text-decoration:none;color:#fff" href="produit.php?id=<?=$produit['id']?>" ><span style="text-align: center;">Voir le produit <i
                                                         class="fas fa-info-circle"></i> </span></a>
                                             </button>
                                         </a>

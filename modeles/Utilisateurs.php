@@ -3,9 +3,6 @@ require_once('../modeles/Modele.php');
 
 class Utilisateurs extends Modele
 {
-    public function getUserInfo()
-    {
-    }
 
     public function Log($email, $password)
     {
