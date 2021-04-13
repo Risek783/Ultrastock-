@@ -199,6 +199,21 @@
   overflow-y: auto;
 }
 
+.article_produit::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.article_produit::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.article_produit::-webkit-scrollbar-thumb {
+  background-color: #dfdfdf;
+  border-radius: 10px;
+}
+
 .collapsible {
   background: rgba(88, 164, 214, 0.568);
   color: white;
@@ -240,7 +255,6 @@
   color: white;
   cursor: pointer;
   padding: 8px;
-  height: 5vh;
   width: 100%;
   border: none;
   text-align: center;
@@ -258,12 +272,11 @@
   color: white;
   cursor: pointer;
   padding: 8px;
-  width: 20%;
-  height: 40px;
   border: none;
   text-align: center;
   font-size: 18px;
   border-radius: 8px;
+  margin:2px
   
 }
 
