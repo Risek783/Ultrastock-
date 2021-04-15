@@ -16,7 +16,7 @@ abstract class Modele
     protected function getBdd()
     {
         if (self::$bdd === null) {
-            self::$bdd = new PDO("mysql:host=127.0.0.1;dbname=tp_gestion_stock", "root", "");
+            self::$bdd = new PDO("mysql:host=127.0.0.1;dbname=ultra_stock", "root", "");
             self::$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
         return self::$bdd;
