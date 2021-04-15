@@ -28,7 +28,7 @@ if (isset($_GET['email'])) {
     <div class="centrer" style="margin-top:25vh">
         <div class="col-sm-5">
             <img class="card-img" style="max-height:150px; object-fit:contain; margin-left:73%; margin-bottom:20px;"
-                src="../image/logo2.png">
+                src="../images/logo2.jpg">
         </div>
         <h1>Se Connecter</h1>
         <form class="form2" action="../traitements/authentification.php" method="post" autocomplete="off">
