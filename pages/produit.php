@@ -16,7 +16,7 @@ $id_produit = $_GET['id'];
 $info_produit = $Produit->recupererProduitbyId($id_produit);
 $categorie_list = $Categorie->recupererCategorie($id_produit);
 $marque_produit = $Marque->recuperermarque($id_produit);
-
+$marque_nom = $Marque->recuperermarquename($marque_produit[0]['id_marque']);
 
 ?>
 
@@ -30,10 +30,10 @@ $marque_produit = $Marque->recuperermarque($id_produit);
             
             <div style="margin:3vh" class="text-center">
                 <div style="margin:3vh">
-                    <h3 style="float: left"><b><u><?= $info_produit[0]['nom']?></u></b> </h3>² 
-                    <h3 style="float: right"><b><u><?= $marque_produit[0]['nom']?></u></b> </h3>
+                    <h3 style="float: left"><b><u><?= $info_produit[0]['nom']?></u></b> </h3>
+                    <h3 style="float: right"><b><u><?= $marque_nom[0]['nom']?></u></b> </h3>
                 </div>
-                <hr>
+                <hr> <br> <br>
                     <?php foreach ($categorie_list as $cat) { ?>
                         <button type=button class="pti_collapsible2 col-lg-3">
                             <span style="text-align: center;"><?= $cat['nom'] ?> </span>
